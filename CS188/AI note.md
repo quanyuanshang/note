@@ -382,11 +382,9 @@ define：![[image-2.png]]
 ![[image-3.png]]
 - **消除** CC
     
-    - 找出所有包含 CC 的因子：$P(C∣T)和 P(E∣C,S)$
-        
+    - 找出所有包含 C 的因子：$P(C∣T)和 P(E∣C,S)$
     - 将它们相乘形成新因子 $f_1 = P(C|T) \cdot P(E|C,S)$
-        
-    - 对 CC 求和（边缘化），得到新因子 $f_2(+e, T, S)$
+    - 对 C 求和（边缘化），得到新因子 $f_2(+e, T, S)$
         
 - **消除** SS
     
@@ -401,7 +399,7 @@ define：![[image-2.png]]
 - **归一化**
     
     - 最后对 f5(+e,T)f_5(+e, T) 进行归一化，得到我们想要的 P(T∣+e)
-    - 477、
+    - 
 
 
 ![[image-4.png]]![[image-5.png]]
@@ -594,6 +592,7 @@ P(W_0, W_1, \ldots, W_n) = P(W_0)P(W_1|W_0)P(W_2|W_0, W_1)\ldots P(W_n|W_{n-1}) 
 
 $$
 To track how our quantity under consideration (in this case, the weather) changes over time, we need to know both it’s **initial distribution** at time t = 0 and some sort of **transition model** that characterizes the probability of moving from one state to another between timesteps.
+假设：stationary distribution
 ## mini-forward algorithm
 $$
 P(W_{i+1}) = \sum_{w_i} P(w_i, W_{i+1}) \quad \text{chain rule} \quad \Rightarrow \quad P(W_{i+1}) = \sum_{w_i} P(W_{i+1} \mid w_i) P(w_i)
@@ -606,3 +605,109 @@ $$
 解上述的方程。
  In general, if  $W_t$had a domain of size k, the equivalence $P(W_{i+1}) =  \sum_{w_i} P(W_{i+1} \mid w_i) P(w_i)$  yields a system of k equations, which we can use to solve for the stationary distribution.
 
+# Hidden Marko Models
+HMM：allows us to observe some evidence at each timestep, which can potentially affect the belief distribution at each of the states. Compared to the Markov model, the Hidden Markov model requires not only the initial distribution, the transition model, but also the **sensor model.**![[image-17.png|Wi:state variable Fi an evidence variable]]
+![[image-24.png]]
+性质：
+1. ![[image-18.png]]
+2. ![[image-19.png]]
+3. ![[image-20.png]]
+- Wi：隐藏状态（比如系统的真实状态）
+- Fi：观测值（你能看到的信号）
+- 每个状态只依赖于前一个状态（马尔可夫性）
+- 每个观测值只依赖于当前状态（局部性）
+![[image-21.png|605x185]]
+![[image-25.png]]
+![[image-26.png]]
+解释：当我们获取到观测之后，不确定性会降低！
+![[image-29.png|有了带伞的条件之后Rain的概率上升，第二天概率减少是因为不确定性增加，但如果观测到两次带伞，Rain的概率又会上去]]
+
+
+## Viter Algorithm
+![[image-30.png]]
+edge weight：![[image-31.png]]
+![[image-32.png]]
+
+![[image-33.png|与前项关系]]
+第一遍从前到后循环：记录能让m最大的x，第二次从后向前循环，走已经找到的最优路线![[image-34.png]]
+
+HMM缺点：Hidden Markov Models have the same drawback as bayes net - the time it takes to run exact inference with the forward algorithm **scales with the number of values in the domains of the random variables**. 
+## Particle Filtering
+类似于贝叶斯净采样的隐马尔可夫模型称为**粒子滤波**，涉及通过状态图模拟一组粒子的运动，以近似相关随机变量的概率（信念）分布。我们认为粒子在任何给定时间步长处于任何给定状态的信念完全取决于我们模拟中该时间步长处于该状态的粒子数量。要从粒子列表中恢复信念分布，您需要做的就是计算粒子的数量并对其进行归一化。
+- Simulation：
+- ### 1️⃣ 粒子初始化（Particle Initialization）
+
+- 随机生成一组粒子，每个粒子代表一个可能的初始状态。
+    
+- 通常是从先验分布中采样，比如均匀分布或高斯分布。
+    
+
+### 2️⃣ 时间推进更新（Time Elapse Update）
+
+- 根据**状态转移模型**（transition model）更新每个粒子的状态。
+    
+- 模拟系统随时间演化的过程。
+    
+
+例如：如果粒子表示一个人的位置，状态转移模型可能是“每秒移动 ±1 米”。
+
+### 3️⃣ 观测更新（Observation Update）
+
+- 根据**观测模型**（sensor model）评估每个粒子的“可信度”。
+    
+- 给每个粒子分配一个权重，表示它与当前观测值的匹配程度。![[image-35.png]]
+    ![[image-36.png]]
+- 然后根据这些权重进行**重采样**（resampling），保留高权重粒子，丢弃低权重粒子。
+
+## Utilities：
+![[image-37.png]]
+- **Axioms of Rationality**：
+- ![[image-38.png]]
+- ![[image-39.png]]
+## Decision Network
+In decision network: 
+- Chance node (ovals) - Chance nodes in a decision network behave identically to Bayes’ nets. 
+- Action node (rectangles) - Action nodes are nodes that we have complete control over. 
+- Utility node (diamonds) - Utility nodes are children of some combination of action and chance nodes.
+- ![[image-40.png]]
+**GOAL：** select the action which yields the **maximum expected utility**(MEU), and the expected utility of taking an action a given evidence e and n chance nodes is computed with
+![[image-41.png|a是action]]
+![[image-42.png|b代表雨伞，W是随机的天气]]
+### The Value of Perfect Information (VPI)
+ mathematically quantifies the amount an agent’s maximum expected utility is expected to increase if it observes some new evidence.
+ ![[image-43.png|s是set of states]]
+ 由于实际上并不知道新的evidence是啥，所以用概率分布![[image-44.png]]
+ 一些性质：![[image-45.png]]
+
+
+
+
+## Markov Decision Processes
+定义的properties：
+![[image-46.png]]
+- **markovianess**
+    - if we know the present state, knowing the past doesn’t give us any more information about the future
+    - $$ P(St+1​=st+1​∣St​=st​,At​=at​,...,S0​=s0​)=P(St+1​=st+1​∣St​=st​,At​=at​)$$
+    - $$ T(s,a,s′)=P(s′∣s,a)$$
+### Finite Horizons and Discount factors
+设置一些时间限制
+![[image-47.png|采用特定的gamma让U有一个上限\折扣因子 γ∈[0,1]：未来奖励的衰减程度]]
+### Solving MDP with the Bellman Equation
+MDP(makov decision process)目标是找到一个**最优策略** π∗:S→A\pi^*: S \to A，使得在每个状态下选择的动作能最大化长期累计奖励。
+🔍 状态值函数 $U^*(s)$
+这是每个状态的最优价值，定义为：
+$U^*(s) = \max_a Q^*(s, a)$
+意思是：在状态 s 下，选择最优动作 a 所能获得的最大期望回报。
+
+🔁 Q值函数$Q^*(s, a)$
+这是在状态 ss 执行动作 aa 的期望回报，定义为：$Q^*(s, a) = \sum_{s'} T(s, a, s') \left[ R(s, a, s') + \gamma U^*(s') \right]$
+解释如下：
+- 对所有可能的下一状态 s′ 求和
+- 每个项是：转移概率 ×（即时奖励 + 折扣后的未来价值）
+这就是**Bellman方程的Q形式**，它体现了**期望最大化原则**。
+
+🌳 搜索树与不确定性
+你提到“state-space graphs can be unraveled into search trees”，这是说：
+- MDP可以展开成一个搜索树，每个节点是状态，每个分支是动作
+- 在这种树中，不确定性通过**Q-state节点**建模，它们类似于**expectimax中的chance节点**
+也就是说，Q值函数在搜索树中扮演了“期望评估”的角色，帮助我们在不确定性下做出最优决策

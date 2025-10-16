@@ -48,9 +48,23 @@
               "icon": "lucide-file",
               "title": "AI note"
             }
+          },
+          {
+            "id": "035be5551cdceeb1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "日程/2025-10-16.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2025-10-16"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -107,8 +121,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "bfab036f363ff0fb",
@@ -172,13 +185,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CG/GAMES101note.md",
+                "file": "日程/2025-10-16.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "GAMES101note 的大纲"
+              "title": "2025-10-16 的大纲"
             }
           },
           {
@@ -211,19 +224,22 @@
       "oz-clear-unused-images:Clear Unused Images": false
     }
   },
-  "active": "da75fc2f8a5cc25f",
+  "active": "035be5551cdceeb1",
   "lastOpenFiles": [
-    "CG/png/image-31.png",
-    "CG/png/image-30.png",
-    "CG/png/image-29.png",
-    "CG/png/image-28.png",
-    "CG/png/image-27.png",
-    "CG/png/捏起来.png",
-    "CG/png/image-23.png",
-    "CG/png/image-19.png",
-    "CG/png/取中点和三角形内部中点相连接.png",
-    "CG/png/image-18.png",
-    "CG/png/image-1.png",
+    "未命名.md",
+    "CS188/AI note.md",
+    "未命名",
+    "CS188/png/image-47.png",
+    "CS188/png/image-46.png",
+    "CS188/png/image-45.png",
+    "CS188/png/image-44.png",
+    "CS188/png/image-43.png",
+    "CS188/png/image-42.png",
+    "CS188/png/image-41.png",
+    "CS188/png/image-40.png",
+    "CS188/png/image-39.png",
+    "CS188/png/image-38.png",
+    "CG/GAMES101note.md",
     "日程/2025-10-16.md",
     "未命名.base",
     "日程/2025-10-15.md",
@@ -231,9 +247,7 @@
     "CS172/CV notes.md",
     "机器学习/机器学习笔记.md",
     "机器学习/机器学习.md",
-    "CS188/AI note.md",
     "未命名 1.base",
-    "CG/GAMES101note.md",
     "积累.md",
     "要学的东西.md",
     "日程/2025-09-20.md",
@@ -256,7 +270,6 @@
     "日程/2025-09-26.md",
     "数据可视化",
     "CS188",
-    "CS172",
     "CS101/复习笔记.md",
     "算法题目/算法题目.md",
     "未命名.canvas"
