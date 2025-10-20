@@ -250,3 +250,19 @@ $$
 目标：定义一个loss function，找到W能够最小化loss function。
 ### SVM
 最近距离最大化
+![[image-6.png]]
+目标：![[image-7.png]]
+对于不可线性划分的数据点，如果能正确分类max取到的就是0，
+Soft margin:![[image-8.png]]![[image-9.png|式子转换一下，与y（wx-b）>=1相比条件宽松]]
+最后用拉格朗日得到权重就是支撑向量的线性组合：![[image-10.png]]
+提升到高维空间，定义好这种点乘，变成一个可分的空间。
+![[image-11.png]]
+- Polynomial Kernel：![[image-12.png]]
+- Gaussian Kernel：![[image-13.png]]
+
+
+# CNN
+问题：线性分类器没有考虑到图像的空间信息。
+![[image-14.png|N是batch大小，一个batch有多少张图片]]
+一直叠加卷积提升到高维无意义（线性）![[image-15.png]]
+加入非线性激活函数。

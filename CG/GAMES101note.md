@@ -233,7 +233,7 @@ C1连续：切线共线并且方向相反
 ## surface
 Bezier Surface：
 ![[image-26.png]]
-- mesh operation：
+- mesh operation：**Mesh** 是计算机图形学中用于表示三维物体表面的数据结构，通常由顶点（Vertices）、边（Edges）和面（Faces）组成。
 1. Mesh Subdivision：引入更多三角形+调整位置细化模型
 	- 顶点区分为新的顶点和旧的位置。
 	- loop subdivision：
@@ -253,7 +253,53 @@ Bezier Surface：
 	- 使用优先级队列，每次取二次误差最小的边，再更新，再找。
 	- 
 3. Mesh regularization:不至于存在过于窄或者过于宽的三角形。
+# Ray Tracing
+
+光栅化只能处理单次光线弹射：光照到表面，弹射进眼睛，但是对于弹射多次（物体表面的光弹射到其他物体再多次弹射进眼镜），光栅化做不好。
+光栅化：实时，很快
+光线追踪：offline，很慢
+## pinhole camera model
+从眼出发光源到最近的某一点，在和光源连线中看看有无遮挡即是否对光源可见，着色。![[image-32.png]]recursive ray tracing
+![[image-34.png|weighted]]
+光路可逆、所有镜面反射，漫反射的光做加权进入Image plane那一像素点的着色。同时能量会有损失
 
 
+## Ray-Surface Intersection
 
+检查光线和三角形是否有焦点：
+1. 光线和平面是否相交
+	1. 平面定义：一个发现方向和一个点![[image-35.png]]
+	2. ![[image-36.png]]
+	
+	
+	
+2. 交点是否在三角形内部 简化的moller Trumbore ![[image-37.png|二合一 cram法则]]
+检查每个三角形是否和光线相交：
+**Bouding Volumes**包围体积：用相对简单的形状包围物体。如果光线和包围盒都碰不到就不用检查其他了。
+**Ray Intersection with Axis-Agligned Box**：
+概念：盒子存在三对平行的对面。为什么取平行面？
+![[image-41.png|平行面只需要考虑这里是x轴的情况，计算简单]]
+![[image-38.png|光线进入所有三个对面到离开某个对面的时间是三个对面时间的交集]]![[image-39.png]]
+但是ray是射线不是时间。如果组中算到的进入时间是负数，出去是正数，光线就在光线里面，就是有焦点。
+![[image-40.png]]
 
+## Uniform Spatial Partitions（grids）
+- 预处理：
+1. Build acceleration Grid:![[image-42.png]] ![[image-43.png|格子不能太密也不能太稀疏|392x219]]比较适用于场景中物体密集或均匀分布情况，因为需要把光走过的格子都算一下
+2. 空间划分：物体密集的地方用小格子![[image-44.png|KD，每个子区域内如果物体数量一定程度，划分成两个区域。水平、竖直交替划分]]
+	1. KD：蓝的左边右边其实都需要分开的![[image-45.png|问题是一个几何结构可能会出现在多个包围盒里]]从上至下，有交点的话两个子节点都要检查直到抵达叶子结点
+
+3. 物体划分：Bounding Volume hierarchy把一个包围盒的物体再分为两份![[image-46.png|划分到每个包围盒里面只包含一定的三角形，不过包围盒之间可能重叠]]
+	- 如何划分？![[image-47.png]]
+	- 结束标准？![[image-48.png]]
+	- 数据结构![[image-49.png|中间节点都是包围盒，只有叶子结点才存到物体]]
+	- 伪代码：![[image-50.png]]
+	-
+## Basic radiometry
+精准定义光。
+1. Radiant flux：光单位时间的能量 单位w
+2. intensity：每立体角的能量。![[image-52.png|立体角]]如果是均匀的，就是总能量/4pi
+![[image-53.png|dw是单位立体角，所有立体角积分就是4pi]]
+3. irradiance
+4. radiance
+![[image-51.png]]

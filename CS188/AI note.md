@@ -229,7 +229,7 @@ Because evaluation functions can only yield estimates of the values of non-termi
 ![[Pasted image 20250925181609.png]]
 
 
-# Propositional Logic
+# Propositional Logic命题逻辑
 - conjunction
 - disjunction
 - implication
@@ -245,20 +245,46 @@ Because evaluation functions can only yield estimates of the values of non-termi
 ## Horn logic
 为了让推理更高效，![[image-9.png]]
 ![[image-10.png]]
-# Firstorder Logic
-| 元素        | 说明                                                |
-| --------- | ------------------------------------------------- |
-| **常量符号**  | 表示具体的对象，如 `John`、`Shanghai`                       |
-| **变量符号**  | 表示任意对象，如 `x`、`y`                                  |
-| **谓词符号**  | 表示对象之间的关系或属性，如 `Loves(John, Mary)` 表示 John 爱 Mary |
-| **函数符号**  | 表示对象之间的映射，如 `FatherOf(x)` 表示 x 的父亲                |
-| **量词**    | 用于表达范围：`∀x` 表示“对所有 x”，`∃x` 表示“存在某个 x”             |
-| **逻辑连接词** | 如 ∧（与）、∨（或）、¬（非）、⇒（蕴含）等                           |
+命题逻辑局限性：
+1. 太依赖T、F赋值，难以identify individual
+2. 没办法涉及个体的性质，只有确定的值无法拥有变量Bill is tall”
+3. 缺乏generalization：无法提炼规律all triangles have 3 sides这里就需要enumerate所有三角形
+# Firstorder Logic一阶逻辑
+更像自然语言：世界包含：
+- Objects: people, houses, numbers, colors, baseball games, wars, …
+- Relations: red, round, prime, bigger than, part of, comes between, …
+- Functions: father of, best friend of, one more than
+
+| 元素               | 说明                                                        |
+| ---------------- | --------------------------------------------------------- |
+| **常量符号**         | 表示具体的对象，如 `John`、`Shanghai`                               |
+| **变量符号**         | 表示任意对象，如 `x`、`y`                                          |
+| **谓词符号**         | 表示对象之间的关系或属性，如 `Loves(John, Mary)` 表示 John 爱 Mary         |
+| **函数符号**         | 表示对象之间的映射，如 `FatherOf(x)` 表示 x 的父亲                        |
+| **量词quantifier** | 用于表达范围：universal`∀x` 表示“对所有 x”，existential`∃x` 表示“存在某个 x” |
+| **逻辑连接词**        | 如 ∧（与）、∨（或）、¬（非）、⇒（蕴含）等                                   |
+|                  |                                                           |
 假设我们要表达“所有人都有母亲”：
-
 - 用一阶逻辑可以写成： $∀x Person(x) ⇒ ∃y\ Mother(y, x)$ 这表示：对所有 x，如果 x 是人，那么存在一个 y，使得 y 是 x 的母亲。
-
 再比如，“John 是 Mary 的兄弟”可以写成： $Brother(John,Mary)$
+
+properties of quantifier：
+![[image-49.png]]
+![[image-50.png]]
+
+一个案例：![[image-48.png|这是错误的，因为只要有人不在STU就一定成立。]]
+equality：![[image-51.png]]
+
+一阶逻辑如何转变为命题逻辑？
+- 找出所有kb，![[image-52.png]]
+- ![[image-53.png|找出所有ground term，instantiating得到新KB]]
+- 如果原先的知识库里有一个函数。那么容易造成无限循环。farther的farther的farther……
+- Reduction：semi-decisive（递归往前，遇到可证明entail的停下，反之没法确定不entail，因为infinite）
+Unification：变量替换让两式相等
+![[image-54.png]]
+FOL里的horn logic：
+![[image-55.png|存在一个theta能匹配前面的条件就能够推出结果。也就是找到能使pi与pi‘相等的theta]]
+
 
 SAT 的基本定义
 

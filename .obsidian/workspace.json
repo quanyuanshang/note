@@ -41,12 +41,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS188/AI note.md",
+                "file": "日程/2025-10-20.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AI note"
+              "title": "2025-10-20"
+            }
+          },
+          {
+            "id": "af2702b6f7947135",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CG/GAMES101note.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "GAMES101note"
             }
           },
           {
@@ -61,6 +75,20 @@
               },
               "icon": "lucide-file",
               "title": "2025-10-16"
+            }
+          },
+          {
+            "id": "9d59c6f1a5e6abf9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "数据可视化/data visualization.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "data visualization"
             }
           }
         ],
@@ -185,13 +213,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "日程/2025-10-16.md",
+                "file": "CS172/CV notes.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "2025-10-16 的大纲"
+              "title": "CV notes 的大纲"
             }
           },
           {
@@ -224,27 +252,32 @@
       "oz-clear-unused-images:Clear Unused Images": false
     }
   },
-  "active": "035be5551cdceeb1",
+  "active": "af2702b6f7947135",
   "lastOpenFiles": [
-    "未命名.md",
-    "CS188/AI note.md",
-    "未命名",
-    "CS188/png/image-47.png",
-    "CS188/png/image-46.png",
-    "CS188/png/image-45.png",
-    "CS188/png/image-44.png",
-    "CS188/png/image-43.png",
-    "CS188/png/image-42.png",
-    "CS188/png/image-41.png",
-    "CS188/png/image-40.png",
-    "CS188/png/image-39.png",
-    "CS188/png/image-38.png",
+    "2025-10-21.md",
+    "日程/2025-10-20.md",
+    "日程/2025-10-19.md",
+    "CS172/CV notes.md",
+    "CS172/png/image-15.png",
+    "CS172/png/image-14.png",
+    "CS172/png/image-13.png",
+    "CS172/png/image-12.png",
+    "CS172/png/image-11.png",
+    "CS172/png/image-10.png",
+    "CS172/png/image-9.png",
+    "CS172/png/image-8.png",
+    "CS172/png/image-7.png",
+    "CS172/png/image-6.png",
+    "数据可视化/data visualization.md",
+    "日程/2025-10-17.md",
     "CG/GAMES101note.md",
     "日程/2025-10-16.md",
+    "CS188/AI note.md",
+    "未命名.md",
+    "未命名",
     "未命名.base",
     "日程/2025-10-15.md",
     "日程/2025-10-14.md",
-    "CS172/CV notes.md",
     "机器学习/机器学习笔记.md",
     "机器学习/机器学习.md",
     "未命名 1.base",
@@ -264,14 +297,9 @@
     "日程/2025-10-12.md",
     "CS188/png",
     "CS172/png",
-    "数据可视化/data visualization.md",
-    "数据可视化/Web前端note.md",
     "数据可视化/png",
-    "日程/2025-09-26.md",
     "数据可视化",
     "CS188",
-    "CS101/复习笔记.md",
-    "算法题目/算法题目.md",
     "未命名.canvas"
   ]
 }

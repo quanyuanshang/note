@@ -64,4 +64,29 @@ Small multiples：
 Dust & Magnet：
 灰尘是数据点。磁铁是过滤器。越靠近磁铁，越能表示数据点和磁铁的相关性。
 
+# 文本可视化
+• Lexical Level: basic unit of text.
+• Syntactic Level: structure information. 
+• Semantic Level: meaning of text contents.
 
+- 分析手段：
+1. Tokenization：Remove stop words: a, the, that, etc+Plural form to singular form: men->man, truths->truth
+	1. Vector-space model:![[image.png]]
+	
+2.  Topic Retrieving:![[image-1.png]]
+
+可视化手段：
+1. Word cloud：encoding词的频率等![[image-2.png]]![[image-3.png]]![[image-6.png]]
+2. 
+> 形状、排布、颜色。
+> 布局：
+> 1. Spiral layout：中心向外
+> 2. 不同年份下单词的联系：![[image-4.png]]
+3. Theme River：![[image-8.png]]![[image-7.png]]![[image-11.png]]![[image-10.png|话题转变方向、轴点击显示文字云、sparkline显示随着时间词汇的频率]]
+# Hierarchical Data
+orthogonal layout
+tree
+radial layout![[image-12.png]]
+treemap：填充空间的算法![[image-15.png]]
+icicle plots:![[image-13.png]]
+voroni Map：两点之间取垂直平分线。![[image-14.png]]
