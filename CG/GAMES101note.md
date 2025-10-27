@@ -7,7 +7,7 @@ Rasterization：光栅化，三维空间内的形体显示在屏幕上。
 2. Reflection：![[Pasted image 20251007013107.png]]
 3. Shear：![[Pasted image 20251007013415.png]]
 > 相似三角形
-4. Rotate：![[Pasted image 20251007013829.png]]![[Pasted image 20251007135000.png]]
+4. Rotate：旋转矩阵是正交阵![[Pasted image 20251007013829.png]]![[Pasted image 20251007135000.png]]
 5. 
 6. 线性变换=Matrice
 
@@ -303,3 +303,52 @@ Bezier Surface：
 3. irradiance
 4. radiance
 ![[image-51.png]]
+
+
+# Animation
+Keyframe Interpolation：
+关键帧插值。
+## Physical Simulation
+Mass Spring System 质点弹簧系统：
+- 没有摩擦力的弹簧：![[image-33.png]]
+- 摩擦力 带一个点事一阶导数就是速度，两个点就是加速度：![[image-54.png|与投影到弹簧方向上的相对速度有关]]、
+仿照布的材质如何调整弹簧模型？![[image-55.png|需要考虑布无法被轻易弯折，无法被拉扯变形]]
+## Particle System
+![[image-56.png|粒子与粒子之间的相互作用力]]
+## Forward & Inverse Kinematics运动学和逆运动学
+关节：
+- pin 平面上的旋转
+- ball 3d旋转
+- prismatic joint：可以沿着这个关节拉长
+
+
+逆运动学：固定轨迹位置P，解关节角度，但是有可能出现解不唯一或者无解的情况。![[image-57.png]]
+解决：用梯度下降来解决，调整两个角度知道尖端往哪里去。
+## Rigging操控
+通过控制点，给物体添加动作。可以通过控制点来做差值。
+## Motion Capture
+真实的动作反映到虚拟的动作。演员身上带上控制点。
+得到的数据：![[image-58.png|每个控制点在时间上的变化]]
+
+## Euler‘s Method
+在一个速度场内，知道时间t，想知道下一帧的位置。![[image-59.png|从上一帧推到下一帧]]
+问题是：
+1. 步长决定准确度，![[image-60.png]]
+2. 不稳定：最后模拟的路线离理想路线越来越远![[image-61.png]]
+
+Solution:
+1. midpoint method:![[image-62.png | ]]![[image-63.png|具体展开公式，最后多了二次项从而更准确，而正常欧拉只会看成是线性的]]
+2. Adaptive Step Size：是否把时间继续细分取决于划分之后的最终点与原先最终点两点相差远不远。所以可以自己适应是否细分时间
+3. Implicit Euler method:![[image-64.png]]
+	- truncation error
+	- accumulated error![[image-65.png|与步长的阶数关系很重要]]
+4. Runge-Kutta Family：RK4 4阶![[image-66.png]]
+5. Position based/Verlet Intergration:调整粒子位置来避免不稳定的行为（拉弹簧怎么调整位置让它不至于无限拉长）但不是物理的不存在能量损失。
+	- Fluid Simulation:
+		1. 假设水是由钢体小球组成的。水是不可压缩的。（质点法、拉格朗日方法）
+		2. 任何一个时刻，某个地方的密度都会一样，一旦密度变化就要修正位置。
+		3. 需要知道：任何一个点的密度对某个小球的梯度（这个小球和周围小球对改点密度影响程度）。调整输入让结果和目标更相似，就是梯度下降
+		- 欧拉方法、网格：空间切成块，看不同时间网格里密度如何变化。![[image-67.png]]
+		- MPM混合上述两种模拟方法
+
+	

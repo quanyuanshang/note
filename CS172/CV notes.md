@@ -263,6 +263,27 @@ Soft margin:![[image-8.png]]![[image-9.png|式子转换一下，与y（wx-b）>=
 
 # CNN
 问题：线性分类器没有考虑到图像的空间信息。
+## Conv Layer
 ![[image-14.png|N是batch大小，一个batch有多少张图片]]
 一直叠加卷积提升到高维无意义（线性）![[image-15.png]]
 加入非线性激活函数。
+关于padding：![[image-16.png]]
+peceptive field：每次往前扩充都会扩充k-1。再加上自己原本的就是再加1
+![[image-18.png| 最后output一个点包含了全图信息]]
+计算：![[image-19.png]]
+1*1 conv可以用于降维，从而降低计算量和参数量。
+
+
+##  Pooling
+![[image-20.png]]
+- shift invariance的矛盾：![[image-21.png| 因为边缘上的1padding影响了神经网络的判断]]
+## batch normalization：
+变成0均值1方差的目的：在经过Wx+b之后能确保输出的结果也能符合0均值...，否则均值可能会越来越大。归一化能控制住数值范围。![[image-22.png| uj是j通道的均值，最后epsilon是防止分母变成0（每个样本都是一样的）]]
+- 测试时候：![[image-27.png]]
+![[image-23.png]]
+通常bn层是在卷积之后，激活层之前做的。加入之后学习速度也会更快，收敛更快，在比较深的网络里是必备的。
+对于bn来说batch size的影响：小的N会让均值差别较大。
+对于layer normalization来说就不存在这个问题。问题是容易受个别特征影响。
+instance normalization：分成最细![[image-24.png]]
+![[image-26.png]]
+案例：VGG：使用3次3\*3，等价于一个7\*7,但由于多次叠加能引入更多非线性。同时参数量也可以变小。![[image-28.png]]

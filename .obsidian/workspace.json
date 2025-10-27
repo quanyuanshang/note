@@ -4,95 +4,53 @@
     "type": "split",
     "children": [
       {
-        "id": "736e54ba7d20723b",
+        "id": "ac05cf2bc1506629",
         "type": "tabs",
         "children": [
           {
-            "id": "5011073bdcc81d55",
+            "id": "4884033df0759cd3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "日程/2025-10-15.md",
+                "file": "CS188/AI note.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-10-15"
+              "title": "AI note"
             }
           },
           {
-            "id": "da75fc2f8a5cc25f",
+            "id": "16eca974a899fffd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CG/GAMES101note.md",
+                "file": "科研/UNI-SIGN.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "GAMES101note"
+              "title": "UNI-SIGN"
             }
           },
           {
-            "id": "10e93974ed943fef",
+            "id": "fc61861fa7781c5e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "日程/2025-10-20.md",
+                "file": "CS172/CV notes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-10-20"
-            }
-          },
-          {
-            "id": "af2702b6f7947135",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CG/GAMES101note.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "GAMES101note"
-            }
-          },
-          {
-            "id": "035be5551cdceeb1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "日程/2025-10-16.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2025-10-16"
-            }
-          },
-          {
-            "id": "9d59c6f1a5e6abf9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "数据可视化/data visualization.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "data visualization"
+              "title": "CV notes"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -149,7 +107,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "bfab036f363ff0fb",
@@ -213,13 +172,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CS172/CV notes.md",
+                "file": "科研/UNI-SIGN.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "CV notes 的大纲"
+              "title": "UNI-SIGN 的大纲"
             }
           },
           {
@@ -237,8 +196,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -252,54 +210,54 @@
       "oz-clear-unused-images:Clear Unused Images": false
     }
   },
-  "active": "af2702b6f7947135",
+  "active": "16eca974a899fffd",
   "lastOpenFiles": [
-    "2025-10-21.md",
-    "日程/2025-10-20.md",
-    "日程/2025-10-19.md",
+    "科研/png/image-5.png",
+    "科研/png/image-4.png",
+    "科研/png/image-3.png",
+    "科研/png/image-2.png",
+    "科研/png/image-1.png",
+    "科研/png/image.png",
+    "科研/png",
+    "要学的东西.md",
+    "SLU.md",
+    "科研/UNI-SIGN.md",
+    "科研",
+    "CG/GAMES105note.md",
+    "CG/png/image-96.png",
+    "CG/png/image-95.png",
+    "CG/png/image-94.png",
+    "CG/png/image-93.png",
+    "CG/png/image-92.png",
     "CS172/CV notes.md",
-    "CS172/png/image-15.png",
-    "CS172/png/image-14.png",
-    "CS172/png/image-13.png",
-    "CS172/png/image-12.png",
-    "CS172/png/image-11.png",
-    "CS172/png/image-10.png",
-    "CS172/png/image-9.png",
-    "CS172/png/image-8.png",
-    "CS172/png/image-7.png",
-    "CS172/png/image-6.png",
-    "数据可视化/data visualization.md",
-    "日程/2025-10-17.md",
     "CG/GAMES101note.md",
-    "日程/2025-10-16.md",
+    "数据可视化/data visualization.md",
     "CS188/AI note.md",
-    "未命名.md",
-    "未命名",
-    "未命名.base",
+    "未命名 1",
+    "Transformer.md",
+    "2025-10-22.md",
     "日程/2025-10-15.md",
+    "日程/2025-10-20.md",
+    "未命名.md",
+    "日程/2025-10-16.md",
+    "日程/2025-10-21.md",
+    "未命名",
+    "数据可视化/Web前端note.md",
+    "马克思.md",
+    "日程/2025-10-19.md",
+    "日程/2025-10-17.md",
+    "未命名.base",
     "日程/2025-10-14.md",
     "机器学习/机器学习笔记.md",
     "机器学习/机器学习.md",
     "未命名 1.base",
     "积累.md",
-    "要学的东西.md",
     "日程/2025-09-20.md",
     "积累",
-    "马克思.md",
     "日程/2025-09-23.md",
-    "日程/2025-09-24.md",
-    "templates/todo.md",
-    "日程/2025-10-05.md",
-    "日程/2025-10-13.md",
     "CG/png",
-    "日程/2025-10-11.md",
-    "日程/2025-10-10.md",
-    "日程/2025-10-12.md",
     "CS188/png",
     "CS172/png",
-    "数据可视化/png",
-    "数据可视化",
-    "CS188",
     "未命名.canvas"
   ]
 }

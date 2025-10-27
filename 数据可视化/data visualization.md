@@ -90,3 +90,62 @@ radial layout![[image-12.png]]
 treemap：填充空间的算法![[image-15.png]]
 icicle plots:![[image-13.png]]
 voroni Map：两点之间取垂直平分线。![[image-14.png]]
+# Network data
+Sugiyama Representation：
+数据本身有一种原生的顺序
+force-based algorithm:
+适用于没有原生数据，每个节点之间会有引力和斥力。
+arc diagram：
+多个实体之间的关系![[image-5.png]]
+Adjacency matrix summary：
+比较抽象但对于密集连接的方式很友好。可以结合一下![[image-9.png]]
+Gmap
+Topology Simplification
+数据简化：
+1. 边捆绑![[image-16.png]]
+2. 最小生成树、点聚类
+
+
+prefuse工具包
+gephi图可视化
+
+
+# 时序信息
+## Temporal Data
+linear time
+radial time:时间具有周期性
+
+grid time：![[image-18.png|日历]]
+spiral time：螺旋上升：![[image-17.png]]
+arbitrary time：折叠，按照时间顺序排列，按相似度折叠。![[image-19.png]]
+chronological：
+![[image-20.png]]
+## Streaming data
+无法预测数据量。
+Dynamic Time Warping (DTW)
+SAX![[image-21.png]]
+设计原则:
+• Follow Shneiderman’s mantra 
+	• Overview first, zoom and filter, detail on demand
+ • Avoid abrupt visual change 
+ • User actions should receive immediate visual feedback 
+ • Assertion: Showing several levels of detail simultaneously provides useful high information density in context
+
+
+## 伪基站项目：
+小组分工
+后端数据挖掘（反应课程关联）
+前端视觉系统设计
+视频制作
+
+第一步不应该是想用什么方法来可视化
+第一步是应该想清楚项目的痛点。
+practical。
+DBscan根据密度寻找核心。
+什么样的短信能被归为一类？
+不确定性：采样频率不一样，点的稀疏不一样就需要更改参数。（比如在警察局附近就稀疏。）参数调整。
+如何确定不同短信是来自同一基站？
+- 文本相似度
+- 时空距离 
+插值还原。
+轨迹重构，要把拟合出来的不确定轨迹拟合到道路上。

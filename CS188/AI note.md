@@ -230,6 +230,7 @@ Because evaluation functions can only yield estimates of the values of non-termi
 
 
 # Propositional Logic命题逻辑
+**命题（proposition）**是一个可以被判断为**真或假**的**陈述句**
 - conjunction
 - disjunction
 - implication
@@ -243,13 +244,16 @@ Because evaluation functions can only yield estimates of the values of non-termi
 > - A|=B 需要证明$A\and \neg B$ is unsatisfiable:如果我们令 $  $，那么整个公式为真 → ✅ 可满足
 
 ## Horn logic
-为了让推理更高效，![[image-9.png]]
+为了让推理更高效，![[image-9.png|“至多一个正文字”。]]
 ![[image-10.png]]
 命题逻辑局限性：
 1. 太依赖T、F赋值，难以identify individual
 2. 没办法涉及个体的性质，只有确定的值无法拥有变量Bill is tall”
 3. 缺乏generalization：无法提炼规律all triangles have 3 sides这里就需要enumerate所有三角形
+
+- valid:**A 是 valid** 当且仅当 对任意模型 M 都有 M ⊨ A。
 # Firstorder Logic一阶逻辑
+
 更像自然语言：世界包含：
 - Objects: people, houses, numbers, colors, baseball games, wars, …
 - Relations: red, round, prime, bigger than, part of, comes between, …
@@ -264,6 +268,25 @@ Because evaluation functions can only yield estimates of the values of non-termi
 | **量词quantifier** | 用于表达范围：universal`∀x` 表示“对所有 x”，existential`∃x` 表示“存在某个 x” |
 | **逻辑连接词**        | 如 ∧（与）、∨（或）、¬（非）、⇒（蕴含）等                                   |
 |                  |                                                           |
+在一阶逻辑（First-Order Logic, FOL）中，表达式必须满足**语法规则（syntax rules）**：
+
+1. **项（terms）**可以是：
+    - 常量（constants）例如 `y`     
+    - 变量（variables）例如 `X`
+    - 函数作用在项上（function applied to terms），例如 `HeightOf(X)`
+    所以：
+    HeightOf(X)HeightOf(X)HeightOf(X)    是一个合法的项，因为它是函数符号 `HeightOf` 作用于变量 `X`。
+    
+2. **原子公式（atomic formula）**可以是：
+    
+    - P(t1,…,tn)P(t_1, \dots, t_n)P(t1​,…,tn​)：谓词作用于项
+    - t1=t2t_1 = t_2t1​=t2​：两个项的相等关系
+        
+    
+    由于 HeightOf(X)HeightOf(X)HeightOf(X) 和 yyy 都是**项**，因此：
+    
+    HeightOf(X)=yHeightOf(X) = yHeightOf(X)=y
+
 假设我们要表达“所有人都有母亲”：
 - 用一阶逻辑可以写成： $∀x Person(x) ⇒ ∃y\ Mother(y, x)$ 这表示：对所有 x，如果 x 是人，那么存在一个 y，使得 y 是 x 的母亲。
 再比如，“John 是 Mary 的兄弟”可以写成： $Brother(John,Mary)$
@@ -350,7 +373,12 @@ goal-driven:q-p-l-m-a-b
 
 - 如果我们想判断一个命题 B 是否是由命题 A 推理出来的（即 A ⊨ B），我们可以通过构造一个新的公式：**A ∧ ¬B**，然后检查它是否**不可满足（unsatisfiable）**。也就是SAT找不到一个模型使得这个表达式可满足，也就是这个表达式最终能返回true
 ## DPLL
-- DPLL要求输入是CNF，即公式是若干个子句的“与”连接，每个子句是若干个文字的“或”连接。例如：$(A∨B)∧(¬C∨D)∧(E)(A \lor B) \land (\neg C \lor D) \land (E)$Then DPLL will continue assigning symbols truth values until either a satisfying model is found or a symbol cannot be assigned without violating a logical constraint, at which point the algorithm will backtrack to the last working assignment
+- DPLL要求输入是CNF，即公式是若干个子句的“与”连接，每个子句是若干个文字的“或”连接。
+- 子句可以是：
+- AA（只有一个文字）
+- ¬B\lnot B（一个否定文字）
+    
+- A∨¬B∨CA \lor \lnot B \lor C（多个文字）例如：$(A∨B)∧(¬C∨D)∧(E)(A \lor B) \land (\neg C \lor D) \land (E)$Then DPLL will continue assigning symbols truth values until either a satisfying model is found or a symbol cannot be assigned without violating a logical constraint, at which point the algorithm will backtrack to the last working assignment
 However, DPLL makes three improvements over simple backtracking search:
 
 1. **Early Termination**: A clause is true if any of the symbols are true. Also, a sentence is false if any single clause is false.
