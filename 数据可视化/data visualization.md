@@ -149,3 +149,131 @@ DBscan根据密度寻找核心。
 - 时空距离 
 插值还原。
 轨迹重构，要把拟合出来的不确定轨迹拟合到道路上。
+
+
+
+
+
+11.24 mid pre
+12.12 final pre
+# project 选题
+## 🎵 Topic One：音乐数据可视化与趋势分析
+
+**目标**：分析音乐发布数据，探索行业趋势与潜力。
+
+**任务**：
+
+1. **音乐人表现评估**：选择一位音乐人（如 Sailor Shift），通过数据分析她的行业表现。
+    
+2. **音乐流派发展分析**：研究某一流派（如 Oceanus Folk）的演变过程，提取关键趋势。
+    
+3. **未来明星预测**：预测未来五年该流派可能出现的明星，并提供数据支持。
+    
+
+**建议方法**：
+
+- 使用时间序列图、地理热图、发布频率图等。
+    
+- 可结合社交媒体热度或流媒体播放量。
+    
+
+## 🏛️ Topic Two：公共机构监督行为分析
+
+**目标**：分析经济监督委员会成员在传统渔业（FILAH）与现代旅游（TROUT）中的行为偏向。
+
+**任务**：
+
+1. **单独数据偏向分析**：分别分析 TROUT 与 FILAH 的数据，判断是否存在成员偏向。
+    
+2. **整合知识图谱分析**：设计可视化方案，分析成员在整合数据中的行为分布，判断是否存在整体偏向。
+    
+3. **深入案例调查**：
+    
+    - 选取 TROUT 指控的成员，分析其行为在整合数据下的变化。
+        
+    - 分析 FILAH 数据中哪些成员受采样偏差影响最大，并用可视化方式呈现。
+        
+
+**建议方法**：
+
+- 使用网络图、时间轴、雷达图等。
+    
+- 强调数据整合前后的差异性。
+    
+
+## 🌊 Topic Three：海岸区许可与利益关系分析
+
+**目标**：揭示海岸区开发中的权力关系与潜在违规行为。
+
+**任务**：
+
+1. **通信模式分析**：分析拦截的无线电通信，提取周期性互动模式。
+    
+2. **船只与人员关系分析**：构建船只与人员之间的互动网络。
+    
+3. **非法行为调查**：
+    
+    - 分析 Nadia Conti 是否仍涉及非法行为。
+        
+    - 可视化其行为轨迹，判断是否存在可疑依据。
+        
+
+**建议方法**：
+
+- 构建知识图谱、行为时间线、互动热力图。
+    
+- 可结合 NLP 技术分析通信内容。
+    
+
+## 🤖 Topic Four：BERT 情感嵌入结构分析
+
+**目标**：探索 BERT 模型在情感表达上的结构演化与偏差。
+
+**任务**：
+
+0. 选择合适的 BERT 模型与数据集。
+    
+1. **宏观评估**：测试 BERT 在不同领域（如电影 vs 产品评论）中情感表达的一致性与泛化能力。
+    
+2. **层级演化分析**：研究情感信息在 BERT 各层之间的传递与抽象过程。
+    
+3. **微观贡献分析**：识别句子中对最终情感嵌入影响最大的词汇，并分析其变化影响。
+    
+
+**建议方法**：
+
+- 使用嵌入可视化（如 t-SNE、UMAP）、词向量热图、层级流图。
+    
+- 可结合 Transformer 可视化工具如 BertViz。
+
+设计过程，自己的方案好在哪里
+
+
+```
+```
+(base) PS D:\cs\数据可视化\Topic1> python scripts\analyze_genre_uniformity.py --min-genres 4 --max-spread 0.1 --max-dominant 0.45 --top 15 --export-json output\uniform_persons.json
+[INFO] total persons: 11361
+[INFO] persons with >= 4 genres: 147
+[INFO] matching uniform persons: 29
+
+Top 15 examples (spread ≤ 0.1, max share ≤ 0.45):
+- #4465 Qiang Song: genres=5, spread=0.000, std=0.000, entropy=2.322 | Darkwave:0.200, Dream Pop:0.200, Indie Folk:0.200, Post-Apocalyptic Folk:0.200, Speed Metal:0.200
+- #1942 Yan Han: genres=5, spread=0.000, std=0.000, entropy=2.322 | Dream Pop:0.200, Post-Apocalyptic Folk:0.200, Space Rock:0.200, Symphonic Metal:0.200, Synthwave:0.200
+- #4185 Na Ren: genres=5, spread=0.000, std=0.000, entropy=2.322 | Americana:0.200, Desert Rock:0.200, Doom Metal:0.200, Indie Folk:0.200, Space Rock:0.200
+- #7398 Charles Vazquez: genres=5, spread=0.000, std=0.000, entropy=2.322 | Indie Rock:0.200, Lo-Fi Electronica:0.200, Oceanus Folk:0.200, Post-Apocalyptic Folk:0.200, Synthwave:0.200
+- #6424 Cheryl Carter: genres=5, spread=0.000, std=0.000, entropy=2.322 | Americana:0.200, Doom Metal:0.200, Indie Folk:0.200, Indie Rock:0.200, Synthpop:0.200
+- #4259 Jie Tao: genres=5, spread=0.000, std=0.000, entropy=2.322 | Alternative Rock:0.200, Indie Folk:0.200, Jazz Surf Rock:0.200, Lo-Fi Electronica:0.200, Psychedelic Rock:0.200
+- #6039 Fang Yin: genres=5, spread=0.000, std=0.000, entropy=2.322 | Alternative Rock:0.200, Blues Rock:0.200, Emo/Pop Punk:0.200, Indie Pop:0.200, Southern Gothic Rock:0.200
+- #6779 Chao Zhong: genres=5, spread=0.000, std=0.000, entropy=2.322 | Alternative Rock:0.200, Blues Rock:0.200, Dream Pop:0.200, Indie Rock:0.200, Southern Gothic Rock:0.200
+- #3990 Ming Huang: genres=5, spread=0.000, std=0.000, entropy=2.322 | Americana:0.200, Dream Pop:0.200, Indie Folk:0.200, Synthpop:0.200, Synthwave:0.200
+- #9231 Brett Brown: genres=4, spread=0.000, std=0.000, entropy=2.000 | Doom Metal:0.250, Dream Pop:0.250, Post-Apocalyptic Folk:0.250, Symphonic Metal:0.250
+- #1021 Przemysław Grupa: genres=4, spread=0.000, std=0.000, entropy=2.000 | Alternative Rock:0.250, Blues Rock:0.250, Indie Pop:0.250, Southern Gothic Rock:0.250
+- #3157 Jun Chang: genres=4, spread=0.000, std=0.000, entropy=2.000 | Americana:0.250, Doom Metal:0.250, Symphonic Metal:0.250, Synthwave:0.250
+- #678 Nathan Bryant: genres=4, spread=0.000, std=0.000, entropy=2.000 | Doom Metal:0.250, Dream Pop:0.250, Indie Rock:0.250, Symphonic Metal:0.250
+- #676 Brandon Bartlett: genres=4, spread=0.000, std=0.000, entropy=2.000 | Doom Metal:0.250, Dream Pop:0.250, Post-Apocalyptic Folk:0.250, Symphonic Metal:0.250
+- #2613 Yong Wen: genres=4, spread=0.000, std=0.000, entropy=2.000 | Doom Metal:0.250, Dream Pop:0.250, Indie Folk:0.250, Oceanus Folk:0.250
+[INFO] exported 29 records to output\uniform_persons.json
+```
+```
+
+

@@ -56,7 +56,7 @@ Uni-Sign：Uni-Sign utilizes generative pre-training on large-scale datasets, ca
 		2. Then 根据分隔符号逗号叹号等生成 video-text pairs
 		3. using predefined relative coordinates to eliminate background interference.使用预定义的相对坐标裁剪手语视频，以消除背景干扰。![[image.png]]
 	2. UNIFIED PRE-TRAINING AND FINE-TUNING：把keypoints划分成左右手 头和脸
-		- pose-encoder：先拿到比较全局的特征Fp，再去拿手部特征Fr：videos cropped using keypoint coordinates and resized to 112 × 112 pixels+==three-layer spatial GCN.==![[image-1.png|learning representa tions from both hands rather than the entire image.]]最后两者融合一下作为F~p，再把Fp和~p都放进==ST-GCN== 通过均值池化层在组内聚合，并在所有组之间进行连接，以生成最终特征 Fsign ∈ RT× 4C，随后被输入到语言模型中。
+		- pose-encoder：先拿到比较全局的特征Fp，再去拿手部特征Fr：videos cropped using keypoint coordinates and resized to 112 × 112 pixels+==three-layer spatial GCN.== [[GNN]]![[image-1.png|learning representa tions from both hands rather than the entire image.]]最后两者融合一下作为F~p，再把Fp和~p都放进==ST-GCN== 通过均值池化层在组内聚合，并在所有组之间进行连接，以生成最终特征 Fsign ∈ RT× 4C，随后被输入到语言模型中。
 		- ![[image-2.png]]
 		- pre-training uni-sign:employ **the generative pre-training paradigm** to utilize the knowledge embedded within the pre-trained large language model.我们将特征 Fsign 投影以匹配语言模型的维度，然后将其输入语言模型。![[image-3.png]]
 		- Fine-tuning Uni-Sign:treat ISLR, CSLR, and SLT as a single SLT task. To construct supervision targets, ISLR uses **action description**, CSLR employs **sequences of glosses** separated by spaces, and SLT utilizes the **translation text**, denoted as **yword, ygloss, ysentence,** respectively.![[image-4.png|最终的目标函数]]
