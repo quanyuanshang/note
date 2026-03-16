@@ -20,23 +20,8 @@
               "icon": "lucide-file",
               "title": "生成论文"
             }
-          },
-          {
-            "id": "e52361d076c21a8e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "111.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "111"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -93,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "9baa82c00c2409b7",
@@ -161,8 +146,8 @@
                 "showSearch": false,
                 "searchQuery": ""
               },
-              "icon": "lucide-archive",
-              "title": "添加笔记属性"
+              "icon": "lucide-ghost",
+              "title": "all-properties"
             }
           },
           {
@@ -189,6 +174,8 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "oz-clear-unused-images:Clear Unused Images": false,
+      "obsidian-full-calendar:Open Full Calendar": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -198,20 +185,53 @@
       "bases:新建数据库": false
     }
   },
-  "active": "e52361d076c21a8e",
+  "active": "658a373747ac89da",
   "lastOpenFiles": [
-    "png/Pasted image 20260313150801.png",
-    "png/Pasted image 20260313144045.png",
-    "png/Pasted image 20260313143220.png",
-    "png/Pasted image 20260313142654.png",
-    "png/Pasted image 20260313141025.png",
-    "png/Pasted image 20260313134734.png",
-    "png/Pasted image 20260313125726.png",
-    "111.md",
+    "image-1.png",
+    "image.png",
+    "自然语言处理/png/image-17.png",
+    "未命名.md",
+    "请教的问题.md",
+    "要学的东西.md",
     "生成论文.md",
-    "Pasted image 20260313150801.png",
-    "Pasted image 20260313144045.png",
-    "Pasted image 20260313143220.png",
-    "Pasted image 20260313142654.png"
+    "保研.md",
+    "png/image-9.png",
+    "png/image-8.png",
+    "png/image-18.png",
+    "png/image-17.png",
+    "png/image-16.png",
+    "png/image-15.png",
+    "png/image-14.png",
+    "png/image-13.png",
+    "diffusion model.md",
+    "Transformer.md",
+    "Build LLM From Scratch.md",
+    "260212.md",
+    "111.md",
+    "自然语言处理/CS274笔记.md",
+    "项目经历/相机标定.md",
+    "项目经历/简历.md",
+    "项目经历/实时手语翻译项目.md",
+    "项目经历",
+    "读书笔记/理解我们内在的冰山.md",
+    "读书笔记/png",
+    "读书笔记",
+    "自然语言处理/png",
+    "自然语言处理",
+    "算法题目/算法题目.md",
+    "算法题目/assets",
+    "算法题目",
+    "科研/UNI-SIGN.md",
+    "科研/Transformer.md",
+    "科研/png",
+    "科研/GNN.md",
+    "科研",
+    "深度学习/png",
+    "深度学习/CS280.md",
+    "杂七杂八/生导C.md",
+    "杂七杂八/R-CNN YOLO.md",
+    "机器学习/机器学习.md",
+    "机器学习/机器学习笔记.md",
+    "日程/日程.md"
   ]
 }
