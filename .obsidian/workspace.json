@@ -1,472 +1,68 @@
 {
   "main": {
-    "id": "ddd5c597010923ed",
+    "id": "8c4eb88eb7696925",
     "type": "split",
     "children": [
       {
-        "id": "93088cd0ee669c02",
+        "id": "3715518d69d27a7a",
         "type": "tabs",
         "children": [
           {
-            "id": "d58cc53be2404962",
+            "id": "658a373747ac89da",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS172/CV notes.md",
+                "file": "自然语言处理/CS274笔记.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CV notes"
+              "title": "CS274笔记"
             }
           },
           {
-            "id": "c5f1d0ad33f26caa",
+            "id": "d35eb9b6ca32f007",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "自然语言处理/png/image-17.png"
+              },
+              "icon": "lucide-image",
+              "title": "image-17"
+            }
+          },
+          {
+            "id": "1b2424691310db7c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "数据可视化/project.md",
+                "file": "未命名.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "project"
-            }
-          },
-          {
-            "id": "dcf1ba6b004771e3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "科研/UNI-SIGN.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "UNI-SIGN"
-            }
-          },
-          {
-            "id": "5b6b57b647435cef",
-            "type": "leaf",
-            "state": {
-              "type": "full-calendar-view",
-              "state": {},
-              "icon": "calendar-glyph",
-              "title": "Calendar"
-            }
-          },
-          {
-            "id": "dce125e9ac468837",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "训练过程：.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "训练过程："
-            }
-          },
-          {
-            "id": "3dbad3afda5d9a21",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "日程/2025-12-28  Presentation Materials Submission.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2025-12-28  Presentation Materials Submission"
-            }
-          },
-          {
-            "id": "b3a70aee900875d1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CS172/CV notes.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "CV notes"
-            }
-          },
-          {
-            "id": "487afb39524bf3e2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CS172/论文.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "论文"
-            }
-          },
-          {
-            "id": "ed855f912c905f36",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "数据可视化/可视化案例分享.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "可视化案例分享"
-            }
-          },
-          {
-            "id": "dcbe41b857ce5d7c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CS172/论文.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "论文"
-            }
-          },
-          {
-            "id": "b08896415db39127",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "数据可视化/论文阅读.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "论文阅读"
-            }
-          },
-          {
-            "id": "d412e2a7aaee083c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CS172/project.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "project"
-            }
-          },
-          {
-            "id": "5d646587f0402497",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CS172/project.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "project"
-            }
-          },
-          {
-            "id": "e654aec6e4a2b4f7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CV演讲稿.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "CV演讲稿"
-            }
-          },
-          {
-            "id": "7e265b4aa529c2c4",
-            "type": "leaf",
-            "state": {
-              "type": "full-calendar-view",
-              "state": {},
-              "icon": "calendar-glyph",
-              "title": "Calendar"
-            }
-          },
-          {
-            "id": "c954ba59fe2c8b31",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CS172/CV notes.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "CV notes"
-            }
-          },
-          {
-            "id": "e14a15c0a5cfc3df",
-            "type": "leaf",
-            "state": {
-              "type": "full-calendar-view",
-              "state": {},
-              "icon": "calendar-glyph",
-              "title": "Calendar"
-            }
-          },
-          {
-            "id": "315b28620e614fcd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "想学的东西.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "想学的东西"
-            }
-          },
-          {
-            "id": "ffd1579e17d49b2e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "20260201.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "20260201"
-            }
-          },
-          {
-            "id": "37ad708e857b4c0b",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.11.5"
-              },
-              "icon": "lucide-book-up",
-              "title": "版本说明 1.11.5"
-            }
-          },
-          {
-            "id": "960ba63540e98848",
-            "type": "leaf",
-            "state": {
-              "type": "full-calendar-view",
-              "state": {},
-              "icon": "calendar-glyph",
-              "title": "Calendar"
-            }
-          },
-          {
-            "id": "7ccfbb2072368dfc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "反思/20260201.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "20260201"
-            }
-          },
-          {
-            "id": "9dce1b1faf80b332",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "反思/20260201.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "20260201"
-            }
-          },
-          {
-            "id": "fae46738e9468aec",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "读书笔记/理解我们内在的冰山.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "理解我们内在的冰山"
-            }
-          },
-          {
-            "id": "385f25a35b1a2056",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "深度学习/CS280.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "CS280"
-            }
-          },
-          {
-            "id": "52399700eddc4fbb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "深度学习/CS280.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "CS280"
-            }
-          },
-          {
-            "id": "c87db2e64abd157e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "数据可视化/project.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "project"
-            }
-          },
-          {
-            "id": "0ac375a188d1a89b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "项目经历/简历.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "简历"
-            }
-          },
-          {
-            "id": "3c714638836f67af",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "项目经历/实时手语翻译项目.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "实时手语翻译项目"
-            }
-          },
-          {
-            "id": "6c2cd3f62ae5b1bb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "项目经历/实时手语翻译项目.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "实时手语翻译项目"
-            }
-          },
-          {
-            "id": "ed09751a7816bbc9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "项目经历/相机标定.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "相机标定"
-            }
-          },
-          {
-            "id": "e6bdcf9bff7ca122",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "想学的东西.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "想学的东西"
-            }
-          },
-          {
-            "id": "9b1010c9d3ffd18e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "深度学习/CS280.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "CS280"
+              "title": "未命名"
             }
           }
         ],
-        "currentTab": 32
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "1e5233c27456bb99",
+    "id": "5656660fcc9a942e",
     "type": "split",
     "children": [
       {
-        "id": "192777762e7bca26",
+        "id": "32d79bf1d652fe90",
         "type": "tabs",
         "children": [
           {
-            "id": "f3603afd7a3d2fbb",
+            "id": "7ac25bd3a86e72d2",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -479,7 +75,7 @@
             }
           },
           {
-            "id": "b27a664b5262a4a5",
+            "id": "2f61781a1d2694bc",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -496,7 +92,7 @@
             }
           },
           {
-            "id": "ef0ccc78840c8892",
+            "id": "b72646bc4dbbf245",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -512,21 +108,21 @@
     "width": 200
   },
   "right": {
-    "id": "bfab036f363ff0fb",
+    "id": "9baa82c00c2409b7",
     "type": "split",
     "children": [
       {
-        "id": "7c3ae4255339ef78",
+        "id": "f9ccf61b79d13907",
         "type": "tabs",
         "children": [
           {
-            "id": "17178c816f9a1f46",
+            "id": "aaa7b2746c7eae7b",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CG/GAMES105note.md",
-                "collapseAll": true,
+                "file": "生成论文.md",
+                "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
@@ -535,25 +131,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "GAMES105note 的反向链接列表"
+              "title": "生成论文 的反向链接列表"
             }
           },
           {
-            "id": "66ec4ddc13c4312c",
+            "id": "6c74fc8a29a54562",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CS172/CV notes.md",
+                "file": "生成论文.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "CV notes 的出链列表"
+              "title": "生成论文 的出链列表"
             }
           },
           {
-            "id": "4042906650ba4cdb",
+            "id": "50ec3dfa793afb2b",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -568,89 +164,100 @@
             }
           },
           {
-            "id": "8c1d21340a58b291",
+            "id": "efecfcc123bf0ad0",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-ghost",
+              "title": "all-properties"
+            }
+          },
+          {
+            "id": "26c2a0d35a24c41c",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "读书笔记/理解我们内在的冰山.md",
+                "file": "生成论文.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "理解我们内在的冰山 的大纲"
+              "title": "生成论文 的大纲"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200,
+    "width": 300,
     "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:新建数据库": false,
+      "oz-clear-unused-images:Clear Unused Images": false,
+      "obsidian-full-calendar:Open Full Calendar": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "oz-clear-unused-images:Clear Unused Images": false,
-      "obsidian-full-calendar:Open Full Calendar": false
+      "bases:新建数据库": false
     }
   },
-  "active": "9b1010c9d3ffd18e",
+  "active": "1b2424691310db7c",
   "lastOpenFiles": [
-    "深度学习/png/image-12.png",
-    "深度学习/png/image-11.png",
     "自然语言处理/CS274笔记.md",
-    "自然语言处理/png/image-3.png",
-    "自然语言处理/png/image-2.png",
-    "自然语言处理/png/image-1.png",
-    "自然语言处理/png/image.png",
-    "自然语言处理/png",
-    "想学的东西.md",
-    "自然语言处理",
-    "深度学习/CS280.md",
-    "深度学习/png/image-10.png",
-    "深度学习/png/image-9.png",
-    "深度学习/png/image-8.png",
+    "未命名.md",
+    "自然语言处理/png/image-17.png",
+    "自然语言处理/png/image-18.png",
+    "自然语言处理/png/image-16.png",
+    "自然语言处理/png/image-15.png",
+    "自然语言处理/png/image-14.png",
+    "自然语言处理/png/image-13.png",
+    "自然语言处理/png/image-12.png",
+    "自然语言处理/png/image-11.png",
+    "自然语言处理/png/image-10.png",
+    "自然语言处理/png/image-9.png",
     "项目经历/相机标定.md",
-    "项目经历/实时手语翻译项目.md",
     "项目经历/简历.md",
+    "项目经历/实时手语翻译项目.md",
     "项目经历",
-    "数据可视化/project.md",
-    "数据可视化/data visualization.md",
-    "数据可视化/Web前端note.md",
-    "杂七杂八/生导C.md",
-    "深度学习/png/image-7.png",
-    "深度学习/png/image-6.png",
-    "深度学习/png",
     "读书笔记/理解我们内在的冰山.md",
-    "深度学习",
     "读书笔记/png",
     "读书笔记",
-    "反思/20260201.md",
-    "20260210.md",
+    "自然语言处理/png",
+    "自然语言处理",
+    "算法题目/算法题目.md",
+    "算法题目/assets",
+    "算法题目",
+    "科研/UNI-SIGN.md",
+    "科研/Transformer.md",
+    "科研/png",
+    "科研/GNN.md",
+    "科研",
+    "深度学习/png",
+    "深度学习/CS280.md",
+    "杂七杂八/生导C.md",
+    "杂七杂八/R-CNN YOLO.md",
+    "机器学习/机器学习.md",
+    "机器学习/机器学习笔记.md",
+    "日程/日程.md",
     "日程/2026-02-05 和maggie姐聊一下职业规划.md",
     "日程/2026-02-05 取钱.md",
     "日程/2026-01-31 学习如何正确使用ai.md",
-    "反思",
-    "杂七杂八/R-CNN YOLO.md",
-    "TODO.md",
-    "RTMpose.md",
-    "project AI.md",
-    "CV演讲稿.md",
-    "动作捕捉.md",
-    "11.md",
-    "2025-12-10 晚6CV补课.md",
-    "积累.md",
-    "未命名 2",
-    "未命名.base",
-    "未命名.canvas"
+    "日程/2026-01-12 CV期末考试.md",
+    "日程/2026-01-12 CV final.md",
+    "日程/2026-01-11 CV做题.md",
+    "日程/2026-01-11 CV做总结.md",
+    "日程/2026-01-10 CV复习知识点.md",
+    "日程/2026-01-10 CV做题.md"
   ]
 }
